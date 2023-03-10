@@ -7,7 +7,7 @@ $(document).ready(function() {
   for (let i = 0; i <= 23; i++) {
     const timeBlock = $('<div>').attr('id', 'hour-' + i).addClass('row time-block');
 
-    // Add appropriate class for past, present, or future time
+    // Added appropriate class for past, present, or future time
     if (i < dayjs().hour()) {
       timeBlock.addClass('past');
     } else if (i === dayjs().hour()) {
@@ -16,11 +16,11 @@ $(document).ready(function() {
       timeBlock.addClass('future');
     }
 
-    // Add hour text
+    // Added hour text
     const hour = $('<div>').addClass('col-2 col-md-1 hour text-center py-3').text(dayjs().hour(i).format('hA'));
     timeBlock.append(hour);
 
-    // Add textarea
+    // Added textarea
     const description = $('<textarea>').addClass('col-8 col-md-10 description').attr('rows', '3');
 
     // Get saved text from local storage, if any
@@ -31,7 +31,7 @@ $(document).ready(function() {
 
     timeBlock.append(description);
 
-    // Add save button
+    // Added save button
     const button = $('<button>').addClass('btn saveBtn col-2 col-md-1').attr('aria-label', 'save');
 
     // Save text to local storage when button is clicked
