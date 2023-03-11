@@ -11,9 +11,15 @@ To use this application, all you have to do is click on a text box and assign a 
 
 ## Link to deployed site
 
+https://kodacaleb.github.io/Planner/
+
 ## Link to github repo
 
+https://github.com/KodaCaleb/Planner
+
 ## screenshot of deployed application
+
+![Screenshot](./Assets/Planner%20SC.png)
 
 ## credits
 N/A
